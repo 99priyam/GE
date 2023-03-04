@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./Style.css">
+</head>
+<body style="background-color: rgb(16, 15, 15);">
+    <br>
+    <br>
+    <br>
+    <div class="row" id="page">
+        <div class="col" id="first_grid"></div>
+        <div class="col" id="second_grid">
+            <div class="heading" >
+               <h1>GREAT EXPECTATION</h1> 
+            </div>
+            <br><br>
+            <div class="file_upload">
+                <form action="">
+                    <div class="input-group" class="box">
+                      <div class="option">
+                        <div class="head">
+                            <h3 class="mx-auto heading choose">
+                                CHOOSE ONE:
+                            </h3>
+                        </div>
+                        <br>
+                        <div class="" style="padding-left:150px">
+                            <div class="form-check" >
+                                <input class="form-check-input" type="radio" id="Aws_Cloud" name="optradio1" value="aws" onclick="RouteToNext(event);">
+                                <label class="form-check-label" for="Aws_Cloud" class="checkbox" style="font-size: large;">
+                                  AWS
+                                </label>
+                                <br><br>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" id="Gcp_Cloud" name="optradio1" value="gcp" onclick="RouteToNext(event);" >
+                                <label class="form-check-label" for="Gcp_Cloud" class="checkbox" style="font-size: large;">
+                                  GCP 
+                                </label>
+                              </div>
+                              <br>
+                              <br><br>
+    
+                        </div>
+                        </div>
+                                    
+                    </div>
+                        
+
+                      </div>
+                      <br>
+                      <!-- <div class="text-center">
+                        <button type="button" class="btn btn-success" style="width: 120px; text-align: center;">NEXT</button>
+
+                      </div> -->
+                      
+                </form>
+            </div>
+            <div class="col" id="first_grid"></div>
+        </div>
+        <div class="col" id="third_grid"></div>
+      </div>
+
+      <script src="./Main.js"></script>
+<!-- 
+      <script>
+
+function aws(event){
+    aws_id=event.target.id;
+    console.log("aws_id====",aws_id)
+    window.location.href="http://127.0.0.1:5000/upload_next?id=" + aws_id ;
+}
+function gcp(event){
+    gcp_id=event.target.id;
+    console.log("gcp_id====",gcp_id)
+    window.location.href="http://127.0.0.1:5000/upload_next?id=" + gcp_id ;
+}
+      </script> -->
+            
+</body>
+</html>
